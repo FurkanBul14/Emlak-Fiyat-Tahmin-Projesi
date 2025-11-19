@@ -13,7 +13,7 @@ Modeli kurmadan önce veriyi tanımak ve hangi değişkenlerin fiyat üzerinde e
 ### 🔍 Değişkenler Arası İlişki (Korelasyon)
 Veri setindeki sayısal değişkenlerin birbirleriyle olan ilişkisini incelemek için **Isı Haritası (Heatmap)** kullandık.
 
-![Korelasyon Matrisi](ss1.png)
+![Korelasyon Matrisi](ss3.png)
 *(Yukarıdaki grafikte görüldüğü üzere, `price` (Fiyat) ile en yüksek ilişkiye sahip olan kutucuk `area` (Alan) kutucuğudur. Kırmızı renk, ilişkinin güçlü olduğunu gösterir.)*
 
 ---
@@ -21,7 +21,7 @@ Veri setindeki sayısal değişkenlerin birbirleriyle olan ilişkisini incelemek
 ### 📈 Alan ve Fiyat Dağılımı
 Seçtiğimiz `area` değişkeni ile `price` hedef değişkeninin nasıl dağıldığını görmek için saçılım (scatter) grafiği çizdirdik.
 
-![Dağılım Grafiği](ss2.png)
+![Dağılım Grafiği](ss1.png)
 *(Bu grafik bize evlerin metrekareleri arttıkça fiyatlarının da genel olarak arttığını kanıtlıyor. Noktaların sağ yukarı doğru giden bir trend izlemesi, Doğrusal Regresyon kullanabileceğimizi gösteriyor.)*
 
 ---
@@ -39,7 +39,7 @@ Ham veri seti üzerinde modelin hatasız çalışması için şu işlemler yapı
 
 Model eğitildikten sonra test verileri üzerinde tahminler yaptı ve gerçek sonuçlarla karşılaştırıldı.
 
-![Regresyon Sonucu](ss3.png)
+![Regresyon Sonucu](ss2.png)
 
 ### 📝 Grafik Yorumu:
 * **Mavi Noktalar:** Gerçek ev fiyatlarıdır.
