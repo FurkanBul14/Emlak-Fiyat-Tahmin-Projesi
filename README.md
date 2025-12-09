@@ -49,7 +49,18 @@ Ham veri seti doğrudan modele verilmemiştir. Daha sağlıklı sonuçlar almak 
 3.  **Eğitim/Test Ayrımı:** Modelin ezber yapmaması için veri seti **%80 Eğitim** ve **%20 Test** olarak ikiye bölünmüştür.
 
 ---
+##  Neden Linear Regression Seçildi? (Model Karşılaştırması)
 
+Projede rastgele bir model seçmek yerine, veriye en uygun algoritmayı bulmak için **6 farklı Regresyon algoritması** (Linear Regression, Random Forest, Decision Tree, KNN, Bayesian Ridge, SVM) yarıştırılmıştır.
+
+Aşağıdaki tabloda modellerin başarı puanları karşılaştırılmıştır:
+
+![Model Karşılaştırma Tablosu](ss7.png)
+
+###  Karşılaştırma Analizi:
+1.  **Şampiyon Model:** Tabloda görüldüğü üzere **Linear Regression (%65.29)**, rakipleri olan Random Forest (%61.14) ve Decision Tree (%47.71) gibi daha karmaşık modelleri geride bırakarak **en yüksek başarıyı** elde etmiştir.
+2.  **Neden Diğerleri Değil?:** Daha karmaşık modeller (Random Forest vb.) bu veri setinde beklenen performansı gösterememiş, veri setinin yapısı gereği en iyi uyumu **Doğrusal (Linear)** model sağlamıştır.
+3.  **Karar:** En yüksek başarı skoruna sahip olduğu ve sonuçları en net açıklanabilen model olduğu için projede **Linear Regression** kullanılmasına karar verilmiştir.
 # 4. Model Sonuçları ve Başarı
 
 Lineer Regresyon modeli eğitildikten sonra, modelin hiç görmediği test verileri üzerinde performans ölçümü yapılmıştır.
